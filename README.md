@@ -68,6 +68,9 @@ To check for errors without modifying files, run:
 make lint
 ```
 
+## ❗ Important
+Remember to clear jupyter notebook outputs before commiting!
+
 ## 🛠️ Makefile Shortcuts
 
 We use a `Makefile` to automate common tasks. You can run these commands from the project root:
