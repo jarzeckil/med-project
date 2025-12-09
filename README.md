@@ -8,7 +8,7 @@ Group project for data analysis and exploration project.
 
 ## 📋 Requirements
 
-* **Python 3.13**
+* **Python >=3.11**
 * **Make** (optional, but recommended for running commands)
 
 ---
