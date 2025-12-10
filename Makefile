@@ -14,6 +14,7 @@ PYTHON_INTERPRETER = python
 .PHONY: install
 install:
 	pip install -r requirements.txt
+	pip install -e .
 
 ## Install dependencies using Poetry
 .PHONY: install-poetry
