@@ -8,7 +8,7 @@ Group project for data analysis and exploration project.
 
 ## 📋 Requirements
 
-* **Python 3.13**
+* **Python >=3.11**
 * **Make** (optional, but recommended for running commands)
 
 ---
@@ -133,5 +133,23 @@ We use a `Makefile` to automate common tasks. You can run these commands from th
     └── plots.py                <- Code to create visualizations
 ```
 
---------
 
+## ✅ Project Roadmap & Quality Checklist
+
+### 🏗️ Infrastructure & Automation (CI/CD)
+- [ ] **GitHub Actions:** Create `.github/workflows/ci.yml` to automatically run `make lint` on every Pull Request.
+- [ ] **Dependency Sync:** Ensure `pyproject.toml` and `requirements.txt` are always synchronized (run `make export-requirements`).
+
+### 💎 Code Quality & Engineering
+- [ ] **Refactoring:** Move reusable logic from Notebooks (`notebooks/`) to the Python package (`med_project/`).
+- [ ] **Type Hinting:** Add type hints to all functions in `med_project` (e.g., `def clean(df: pd.DataFrame) -> pd.DataFrame:`).
+- [ ] **Unit Tests:** Implement basic tests using `pytest` for critical data processing functions (create a `tests/` directory).
+
+### 📢 Documentation & Business Context
+- [ ] **Problem Statement:** Add a section at the top of README explaining the specific medical problem we are solving.
+- [ ] **Business Value:** Define how this model helps (e.g., "reduces diagnosis time", "minimizes false negatives").
+- [ ] **Clean Notebooks:** Ensure "Gold Standard" notebooks are readable and stripped of outputs before committing.
+
+### 🚀 Deployment & Extras
+- [ ] **Interactive Demo:** Create a simple **Streamlit** app (`app.py`) to showcase the model functionality.
+- [ ] **Experiment Tracking:** (Optional) Use **MLflow** to log model parameters and performance metrics instead of printing them.
