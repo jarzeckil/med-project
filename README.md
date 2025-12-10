@@ -11,7 +11,6 @@ Group project for data analysis and exploration project.
 * **Python >=3.11**
 * **Make** (optional, but recommended for running commands)
 
----
 
 ## 🚀 Installation & Setup
 
@@ -67,6 +66,24 @@ To check for errors without modifying files, run:
 ```bash
 make lint
 ```
+
+## 🧭 Project paths (from `med_project.config`)
+
+This project centralizes important directories in `med_project/config.py` using `pathlib.Path`. You should **always import and reuse these constants** instead of hard‑coding paths.
+
+### How to use these paths in your code
+
+Example – loading the raw diabetes dataset:
+
+```python
+from med_project.config import RAW_DATA_DIR
+import pandas as pd
+
+csv_path = RAW_DATA_DIR / "diabetes_dataset.csv"
+df = pd.read_csv(csv_path)
+```
+
+If needed, create your own constants.
 
 ## ❗ Important
 Remember to clear jupyter notebook outputs before commiting!
