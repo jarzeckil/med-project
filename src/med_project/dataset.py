@@ -1,8 +1,7 @@
 import os
 
-import kagglehub
-
 from config import RAW_DATA_DIR
+import kagglehub
 
 # Download latest version
 path = kagglehub.dataset_download(
