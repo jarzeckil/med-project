@@ -30,14 +30,16 @@ dependencies = [
 ]
 requires-python = ">=3.11"
 
+[tool.poetry]
+packages = [{include = "med_project", from = "src"}]
+
 [tool.poetry.requires-plugins]
 poetry-plugin-export = ">=1.8"
 
 [tool.ruff]
 line-length = 88
 indent-width = 4
-src = ["med_project"]
-include = ["pyproject.toml", "med_project/**/*.py"]
+src = ["src"]
 
 [tool.ruff.lint]
 # Select which rule categories are enabled
