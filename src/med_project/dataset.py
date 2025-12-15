@@ -2,7 +2,7 @@ import os
 
 import kagglehub
 
-from med_project.config import RAW_DATA_DIR
+from src.med_project.config import RAW_DATA_DIR
 
 # Download latest version
 path = kagglehub.dataset_download(
