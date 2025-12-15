@@ -65,13 +65,11 @@ Clear notebook outputs before committing.
 └── requirements.txt   # Dependencies
 ```
 
-## Roadmap
-- [ ] **CI/CD:** GitHub Actions (`make lint`).
+## Quality checks & roadmap
 - [ ] **Deps:** Sync `pyproject.toml` and `requirements.txt`.
 - [ ] **Refactor:** Move logic from notebooks to `med_project/`.
 - [ ] **Types:** Add type hints.
 - [ ] **Tests:** Unit tests (`pytest`).
-- [ ] **Docs:** Problem statement & Business value.
 - [ ] **Clean:** Strip notebook outputs.
 - [ ] **Demo:** Streamlit app.
 - [ ] **MLflow:** Experiment tracking.
