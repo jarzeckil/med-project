@@ -16,9 +16,10 @@ def plot_distributions(df: pd.DataFrame, n_cols: int = 4, bins: int = 50):
         if df[col].dtypes == 'object':
             df[col].hist(bins=bins)
             plt.title(col)
+            plt.xticks(rotation=45, ha='right')
         else:
             sns.histplot(data=df, x=col, kde=True, bins=bins)
-            plt.title(f'{col} | Skewness: {round(df[col].skew(), 2)}')
+            plt.title(f'{col}\nSkewness: {round(df[col].skew(), 2)}')
         plt.tight_layout()
 
 
