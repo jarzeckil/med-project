@@ -41,3 +41,6 @@ create_venv: ## Create standard Python venv (No Poetry)
 create_environment: ## Set up Python interpreter environment (Poetry)
 	poetry env use $(PYTHON_VERSION)
 	@echo ">>> Poetry environment created."
+
+preprocess: ## Preprocess data (Example placeholder)
+	python src/med_project/preprocess.py
